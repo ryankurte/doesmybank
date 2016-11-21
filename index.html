@@ -39,7 +39,7 @@
           <tr>
             <td>ANZ</td>
             <td><a href="https://www.anz.co.nz">www.anz.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup>[1]</sup></td>
+            <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td>OnlineCode SMS-based</td>
@@ -49,7 +49,7 @@
             <td>ASB</td>
             <td><a href="https://www.asb.co.nz">www.asb.co.nz</a></td>
             <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup>[2]</sup></td>
+            <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup>[1]</sup></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td>Netcode SMS or RSA physical token</td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
@@ -57,7 +57,7 @@
           <tr>
             <td>BNZ</td>
             <td><a href="https://www.bnz.co.nz">www.bnz.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><sup>[3]</sup></td>
+            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><sup>[2]</sup></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td>NetGuard look up table</td>
@@ -75,7 +75,7 @@
           <tr>
             <td>Kiwibank</td>
             <td><a href="https://www.kiwibank.co.nz">www.kiwibank.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup>[4]</sup></td>
+            <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup>[3]</sup></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td>KeepSafe Question / Answer</td>
@@ -84,8 +84,8 @@
           <tr>
             <td>RaboDirect</td>
             <td><a href="https://www.rabodirect.co.nz">www.rabodirect.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><sup>[5]</sup></td>
-            <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup>[6]</sup></td>
+            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><sup>[4]</sup></td>
+            <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup>[5]</sup></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td>Digipass hardware token</td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
@@ -93,7 +93,7 @@
           <tr>
             <td>TSB</td>
             <td><a href="https://www.tsbbank.co.nz">www.tsbbank.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><sup>[7]</sup></td>
+            <td><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><sup>[6]</sup></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
@@ -102,7 +102,7 @@
           <tr>
             <td>Westpac</td>
             <td><a href="https://www.westpac.co.nz">www.westpac.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><sup>[8]</sup></td>
+            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><sup>[7]</sup></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
             <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
@@ -124,7 +124,7 @@
       <div>
         <h4>FAQs</h4>
         <p>Q: What is a "Real Password"?</p>
-        <p>A: Passwords should be case sensitive, allow special characters, and not artificially limited in length [9]. If you have a better term for this, let me know!</p>
+        <p>A: Passwords should be case sensitive, allow special characters, and not artificially limited in length [8]. If you have a better term for this, let me know!</p>
         <br>
         <p>Q: What is two factor authentication?</p>
         <p>A: <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">Two factor authentication</a> (or 2fa) is an additional security feature used when you login to ensure that you are in control of your account. This is commonly accomplished using Time based One Time Password (TOTP) apps like <a href="https://en.wikipedia.org/wiki/Google_Authenticator">Google authenticator</a> or Physical Tokens such as <a href="https://en.wikipedia.org/wiki/YubiKey">Yubikeys</a>. Click <a href="https://www.securenvoy.com/two-factor-authentication/what-is-2fa.shtm">here</a> for a more detailed introduction to multi factor authentication.</p>
@@ -149,15 +149,14 @@
           Given your password is complex enough, the probability of brute forcing it prior to your account being locked is negligible.
         </p>
         <br> 
-        <p>[1] ANZ have a 16 character password limit and do not officially support special characters, though it appears they work. <a href="https://www.anz.com/internet-banking/help/glossary/#password_tips">source</a></p>
-        <p>[2] ASB do support RSA SecureID tokens (you may have to pay for it)</p>
-        <p>[3] BNZ require a 6-8 character password (?) with one letter and one number, mitigated using the lookup table for transactions</p>
-        <p>[4] Kiwibank passwords are case insensitive (!?) and have a maximum password length of 15 characters, with an additional challenge word on login</p>
-        <p>[5] RaboDirect appear to use a numeric PIN instead of a password for online logins, which is mitigated by [6]</p>
-        <p>[6] RaboDirect require <a href="https://www.rabodirect.co.nz/security/digipass/default.aspx">Digipass</a> challenge based second factor by <a href="https://www.vasco.com/">Vasco</a></p>
-        <p>[7] TSB were unwilling to publicise their password requirements, if you bank with TSB and could check that would be great</p>
-        <p>[8] Westpac passwords are case insensitive (?!?). <a href="http://westpac.custhelp.com/app/answers/detail/a_id/523/~/how-do-i-choose-an-online-banking-password%3F">source</a></p>
-        <p>[9] The <a href="http://www.gcsb.govt.nz/publications/the-nz-information-security-manual/">NZ Information Security Manual (NZISM)</a> part 2 section 16.1.21.C.01. requires passwords to be at least 10 characters, allowing lower and upper case, digits, and special characters.</p>
+        <p>[1] ASB do support RSA SecureID tokens (you may have to pay for it)</p>
+        <p>[2] BNZ require a 6-8 character password (?) with one letter and one number, mitigated using the lookup table for transactions</p>
+        <p>[3] Kiwibank passwords are case insensitive (!?) and have a maximum password length of 15 characters, with an additional challenge word on login</p>
+        <p>[4] RaboDirect appear to use a numeric PIN instead of a password for online logins, which is mitigated by [6]</p>
+        <p>[5] RaboDirect require <a href="https://www.rabodirect.co.nz/security/digipass/default.aspx">Digipass</a> challenge based second factor by <a href="https://www.vasco.com/">Vasco</a></p>
+        <p>[6] TSB were unwilling to publicise their password requirements, if you bank with TSB and could check that would be great</p>
+        <p>[7] Westpac passwords are case insensitive (?!?). <a href="http://westpac.custhelp.com/app/answers/detail/a_id/523/~/how-do-i-choose-an-online-banking-password%3F">source</a></p>
+        <p>[8] The <a href="http://www.gcsb.govt.nz/publications/the-nz-information-security-manual/">NZ Information Security Manual (NZISM)</a> part 2 section 16.1.21.C.01. requires passwords to be at least 10 characters, allowing lower and upper case, digits, and special characters.</p>
 
       </div>
 
