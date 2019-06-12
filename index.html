@@ -9,6 +9,8 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,168 +21,166 @@
   </head>
   <body>
   <div class="container-fluid">
-    <div class="col-md-8 col-md-offset-2">
-
-      <h2>Does my bank support?</h2>
-      <h4>A look at the security and standards compliance of NZ banks</h4>
-      <br>
-
-      <div>
-        <table class="table table-reflow">
-          <tr>
-            <th>Bank</th>
-            <th>Website</th>
-            <th>Real Passwords</th>
-            <th>Two Factor Auth (TOTP)</th>
-            <th>Two Factor Auth (U2F)</th>
-            <th>Two Factor Auth (Other)</th>
-            <th>User accessible APIs</th>
-          </tr>
-          <tr>
-            <td>ANZ</td>
-            <td><a href="https://www.anz.co.nz">www.anz.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup>[1]</sup></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td>OnlineCode SMS-based</td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-          </tr>
-          <tr>
-            <td>ASB</td>
-            <td><a href="https://www.asb.co.nz">www.asb.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup>[2]</sup></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td>Netcode SMS or RSA physical token</td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-          </tr>
-          <tr>
-            <td>BNZ</td>
-            <td><a href="https://www.bnz.co.nz">www.bnz.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><sup>[3]</sup></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td>NetGuard look up table</td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-          </tr>
-          <tr>
-            <td>Cooperative Bank</td>
-            <td><a href="https://www.co-operativebank.co.nz">www.co-operativebank.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-          </tr>
-          <tr>
-            <td>Kiwibank</td>
-            <td><a href="https://www.kiwibank.co.nz">www.kiwibank.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup>[4]</sup></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td>KeepSafe Question / Answer</td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-          </tr>
-          <tr>
-            <td>RaboDirect</td>
-            <td><a href="https://www.rabodirect.co.nz">www.rabodirect.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><sup>[5]</sup></td>
-            <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup>[6]</sup></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td>Digipass hardware token</td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-          </tr>
-          <tr>
-            <td>SBS</td>
-            <td><a href="https://www.sbsbank.co.nz/">www.sbsbank.co.nz/</a></td>
-            <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-          </tr>
-          <tr>
-            <td>TSB</td>
-            <td><a href="https://www.tsbbank.co.nz">www.tsbbank.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><sup>[7]</sup></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-          </tr>
-          <tr>
-            <td>Westpac</td>
-            <td><a href="https://www.westpac.co.nz">www.westpac.co.nz</a></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><sup>[8]</sup></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-            <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-          </tr>
-        </table>
-      </div>
-
-      <div>
-      <h4>Key</h4>
-        <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Good support</p>
-        <p><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Not supported, though a similar or mitigating option is</p>
-        <p><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Not supported at all</p>
-        <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> No available information, if you can find out I would love to know</p>
-      </div>
-
-      <hr>
-      
-      <div>
-        <h4>FAQs</h4>
-        <p>Q: What is a "Real Password"?</p>
-        <p>A: Passwords should be case sensitive, allow special characters, and not artificially limited in length [9]. If you have a better term for this, let me know!</p>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+        <h2>Does my bank support?</h2>
+        <h4>A look at the security and standards compliance of NZ banks</h4>
         <br>
-        <p>Q: What is two factor authentication?</p>
-        <p>A: <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">Two factor authentication</a> (or 2fa) is an additional security feature used when you login to ensure that you are in control of your account. This is commonly accomplished using Time based One Time Password (TOTP) apps like <a href="https://en.wikipedia.org/wiki/Google_Authenticator">Google authenticator</a> or Physical Tokens such as <a href="https://en.wikipedia.org/wiki/YubiKey">Yubikeys</a>. Click <a href="https://www.securenvoy.com/two-factor-authentication/what-is-2fa.shtm">here</a> for a more detailed introduction to multi factor authentication.</p>
-        <br>
-        <p>Q: Is some 2fa better than no 2fa?</p>
-        <p>A: Yes. Definitely yes. Though some methods may be more susceptible to attack than others. New sites should support industry standards such as <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm">TOTP</a> [<a href="https://tools.ietf.org/html/rfc6238">1</a>] and <a href="https://en.wikipedia.org/wiki/Universal_2nd_Factor">Fido/U2F</a> [<a href="https://fidoalliance.org/specifications/overview/">2</a>]. SMS is <a href="https://techcrunch.com/2016/07/25/nist-declares-the-age-of-sms-based-2-factor-authentication-over/">no longer recommended</a> due to ease of exploitation.</p>
-        <br>
-        <p>Q: What is an RSA physical token</p>
-        <p>A: RSA SecureId tokens are a vendor specific implementation of a Time based One Time Password scheme.</p>
-        <br>
-        <p>Q: What do you mean by user accessible APIs?</p>
-        <p>A: (Read only) APIs that any user or company providing a service to a user can utilize to query account and spending details on behalf of a user for analytics or any other purpose, with authorization provided using a standard user-centric method such as <a href="https://en.wikipedia.org/wiki/OAuth">OAuth</a>. Think, APIs that would let products like Xero be built, to put personal data for financial analysis in the hands of users.</p>
-      </div>
 
-      <hr>
-
-      <div>
-        <h4>Notes</h4>
-        <p>Not all banks had public information about password requirements.</p>
-        <p>
-          The risk of terrible passwords can be mitigated using login analysis which all banks do.
-          Given your password is complex enough, the probability of brute forcing it prior to your account being locked is negligible.
-        </p>
-        <br> 
-        <p>[1] ANZ have a 16 character password limit and do not officially support special characters, though it appears they work. <a href="https://www.anz.com/internet-banking/help/glossary/#password_tips">source</a></p>
-        <p>[2] ASB do support RSA SecureID tokens (you may have to pay for it)</p>
-        <p>[3] BNZ require a 6-8 character password (?) with one letter and one number, mitigated using the lookup table for transactions</p>
-        <p>[4] Kiwibank passwords are case insensitive (!?) and have a maximum password length of 15 characters, with an additional challenge word on login</p>
-        <p>[5] RaboDirect appear to use a numeric PIN instead of a password for online logins, which is mitigated by [6]</p>
-        <p>[6] RaboDirect require <a href="https://www.rabodirect.co.nz/security/digipass/default.aspx">Digipass</a> challenge based second factor by <a href="https://www.vasco.com/">Vasco</a></p>
-        <p>[7] TSB were unwilling to publicise their password requirements, if you bank with TSB and could check that would be great</p>
-        <p>[8] Westpac passwords are case insensitive (?!?). <a href="http://westpac.custhelp.com/app/answers/detail/a_id/523/~/how-do-i-choose-an-online-banking-password%3F">source</a></p>
-        <p>[9] The <a href="http://www.gcsb.govt.nz/publications/the-nz-information-security-manual/">NZ Information Security Manual (NZISM)</a> part 2 section 16.1.21.C.01. requires passwords to be at least 10 characters, allowing lower and upper case, digits, and special characters.</p>
-
-      </div>
-
-      <br>
-
-      <footer class="footer">
-        <div class="container">
-          <p class="text-muted">For updates, questions or suggestions, contact me <a href="https://twitter.com/ryankurte">@ryankurte</a> or open an issue on <a href="https://github.com/ryankurte/doesmybank">github.com/ryankurte/doesmybank</a></p>
+        <div class="table-responsive">
+          <table class="table table-reflow">
+            <tr>
+              <th data-label="Bank">Bank</th>
+              <th>Website</th>
+              <th>Real Passwords</th>
+              <th>Two Factor Auth (TOTP)</th>
+              <th>Two Factor Auth (U2F)</th>
+              <th>Two Factor Auth (Other)</th>
+              <th>User accessible APIs</th>
+            </tr>
+            <tr>
+              <td data-label="ANZ">ANZ</td>
+              <td><a href="https://www.anz.co.nz">www.anz.co.nz</a></td>
+              <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td>OnlineCode SMS-based</td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+              <td data-label="ASB">ASB</td>
+              <td><a href="https://www.asb.co.nz">www.asb.co.nz</a></td>
+              <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup><a href="#note1">[1]</a></sup></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td>Netcode SMS or RSA physical token</td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+              <td data-label="BNZ">BNZ</td>
+              <td><a href="https://www.bnz.co.nz">www.bnz.co.nz</a></td>
+              <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><sup><a href="#note2">[2]</a></sup></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td>NetGuard look up table</td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+              <td data-label="Co-operative Bank">Co-operative Bank</td>
+              <td><a href="https://www.co-operativebank.co.nz">www.co-operativebank.co.nz</a></td>
+              <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup><a href="#note9">[9]</a></sup></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+              <td data-label="Kiwibank">Kiwibank</td>
+              <td><a href="https://www.kiwibank.co.nz">www.kiwibank.co.nz</a></td>
+              <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup><a href="#note3">[3]</a></sup></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td>KeepSafe Question / Answer</td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+              <td data-label="RaboDirect">RaboDirect</td>
+              <td><a href="https://www.rabodirect.co.nz">www.rabodirect.co.nz</a></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><sup><a href="#note4">[4]</a></sup></td>
+              <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><sup><a href="#note5">[5]</a></sup></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td>Digipass hardware token</td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+              <td data-label="SBS">SBS</td>
+              <td><a href="https://www.sbsbank.co.nz/">www.sbsbank.co.nz/</a></td>
+              <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              </tr>
+            <tr>
+              <td data-label="TSB">TSB</td>
+              <td><a href="https://www.tsbbank.co.nz">www.tsbbank.co.nz</a></td>
+              <td><span class="glyphicon glyphicon-removen" aria-hidden="true"></span><sup><a href="#note6">[6]</a></sup></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+              <td data-label="Westpac">Westpac</td>
+              <td><a href="https://www.westpac.co.nz">www.westpac.co.nz</a></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><sup><a href="#note7">[7]</a></sup></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+              <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+            </tr>
+          </table>
         </div>
-      </footer>
+        <span class="table-person-helper hidden-sm hidden-md hidden-lg">Swipe left to see more</span>
+
+        <div>
+        <h4>Key</h4>
+          <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Good support</p>
+          <p><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Not supported, though a similar or mitigating option is</p>
+          <p><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Not supported at all</p>
+          <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> No available information, if you can find out I would love to know</p>
+        </div>
+
+        <hr>
+
+        <div>
+          <h4>FAQs</h4>
+          <p>Q: What is a "Real Password"?</p>
+          <p>A: Passwords should be case sensitive, allow special characters, and not artificially limited in length <a href="#note8">[8]</a>. If you have a better term for this, let me know!</p>
+          <br>
+          <p>Q: What is two factor authentication?</p>
+          <p>A: <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">Two factor authentication</a> (or 2fa) is an additional security feature used when you login to ensure that you are in control of your account. This is commonly accomplished using Time based One Time Password (TOTP) apps like <a href="https://en.wikipedia.org/wiki/Google_Authenticator">Google authenticator</a> or Physical Tokens such as <a href="https://en.wikipedia.org/wiki/YubiKey">Yubikeys</a>. Click <a href="https://www.securenvoy.com/two-factor-authentication/what-is-2fa.shtm">here</a> for a more detailed introduction to multi factor authentication.</p>
+          <br>
+          <p>Q: Is some 2fa better than no 2fa?</p>
+          <p>A: Yes. Definitely yes. Though some methods may be more susceptible to attack than others. New sites should support industry standards such as <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm">TOTP</a> [<a href="https://tools.ietf.org/html/rfc6238">1</a>] and <a href="https://en.wikipedia.org/wiki/Universal_2nd_Factor">Fido/U2F</a> [<a href="https://fidoalliance.org/specifications/overview/">2</a>]. SMS is <a href="https://techcrunch.com/2016/07/25/nist-declares-the-age-of-sms-based-2-factor-authentication-over/">no longer recommended</a> due to ease of exploitation.</p>
+          <br>
+          <p>Q: What is an RSA physical token</p>
+          <p>A: RSA SecureId tokens are a vendor specific implementation of a Time based One Time Password scheme.</p>
+          <br>
+          <p>Q: What do you mean by user accessible APIs?</p>
+          <p>A: (Read only) APIs that any user or company providing a service to a user can utilize to query account and spending details on behalf of a user for analytics or any other purpose, with authorization provided using a standard user-centric method such as <a href="https://en.wikipedia.org/wiki/OAuth">OAuth</a>. Think, APIs that would let products like Xero be built, to put personal data for financial analysis in the hands of users.</p>
+        </div>
+
+        <hr>
+
+        <div>
+          <h4>Notes</h4>
+          <p>Not all banks had public information about password requirements.</p>
+          <p>
+            The risk of terrible passwords can be mitigated using login analysis which all banks do.
+            Given your password is complex enough, the probability of brute forcing it prior to your account being locked is negligible.
+          </p>
+          <br>
+          <p id="note1">[1] ASB do support RSA SecureID tokens (you will have to pay for it)</p>
+          <p id="note2">[2] <a href="https://twitter.com/hipsterjazzbo/status/967546047261110273">BNZ now allow 60 character passwords!</a> and a reasonable character range</p>
+          <p id="note3">[3] Kiwibank passwords are case insensitive (!!?) and have a maximum password length of 15 characters, with an additional challenge word on login</p>
+          <p id="note4">[4] RaboDirect appear to use a numeric PIN instead of a password for online logins, which is mitigated by [5]</p>
+          <p id="note5">[5] RaboDirect require <a href="https://www.rabodirect.co.nz/security/digipass/default.aspx">Digipass</a> challenge based second factor by <a href="https://www.vasco.com/">Vasco</a></p>
+          <p id="note6">[6] TSB require 8-16 character passwords one letter and one number</p>
+          <p id="note7">[7] Westpac passwords are case insensitive (!!!?). <a href="http://westpac.custhelp.com/app/answers/detail/a_id/523/~/how-do-i-choose-an-online-banking-password%3F">source</a></p>
+          <p id="note8">[8] The <a href="http://www.gcsb.govt.nz/publications/the-nz-information-security-manual/">NZ Information Security Manual (NZISM)</a> part 2 section 16.1.21.C.01. requires passwords to be at least 10 characters, allowing lower and upper case, digits, and special characters.</p>
+          <p id="note9">[9] Co-operative bank's passworld policy requires passwords to be between 8-15 characters, containing at least 1 number and 1 letter. <a href="https://www.co-operativebank.co.nz/terms-and-conditions/terms-and-conditions-digital-services">source</a></p>
+
+        </div>
+
+        <br>
+
+        <footer class="footer">
+          <p class="text-muted">For updates, questions or suggestions, contact me <a href="https://twitter.com/ryankurte">@ryankurte</a> or open an issue on <a href="https://github.com/ryankurte/doesmybank">github.com/ryankurte/doesmybank</a></p>
+        </footer>
+      </div>
     </div>
   </div>
-
-
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -188,4 +188,3 @@
   <script src="js/analytics.js"></script>
 </body>
 </html>
-

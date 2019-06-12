@@ -1,0 +1,32 @@
+:target {
+    background-color: #ffa;
+}
+
+@media screen and (max-width: 767px) {
+    .table-reflow tbody {
+        position: relative;
+    }
+    .table-reflow tr td:first-child:before, .table-reflow tr th:first-child:before {
+        position: absolute;
+        z-index: 1;
+        left: 15px;
+        display: block;
+        width: 133px;
+        height: 37px;
+        padding: 8px;
+        content: attr(data-label);
+        transform: translateY(-8px);
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        background-color: white;
+    }
+    .table-person-helper {
+        font-size: 10px;
+        top: 100%;
+        display: block;
+        content: attr(data-label);
+        text-align: right;
+        color: #6f6f6f;
+    }
+}
